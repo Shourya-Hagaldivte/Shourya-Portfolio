@@ -1,0 +1,200 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shourya Hagaldivte | Portfolio</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {} },
+    }
+  </script>
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 bg-gray-800 bg-opacity-90 backdrop-blur-md z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="text-xl font-bold">Shourya H.</div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#about"    class="hover:text-indigo-400">About</a>
+        <a href="#projects" class="hover:text-indigo-400">Projects</a>
+        <a href="#skills"   class="hover:text-indigo-400">Skills</a>
+        <a href="#contact"  class="hover:text-indigo-400">Contact</a>
+      </div>
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 8h16M4 16h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="#about"    class="block py-2">About</a>
+      <a href="#projects" class="block py-2">Projects</a>
+      <a href="#skills"   class="block py-2">Skills</a>
+      <a href="#contact"  class="block py-2">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about" class="min-h-screen flex items-center justify-center px-4" data-aos="fade-up">
+    <div class="max-w-3xl text-center">
+      <h1 class="text-4xl font-bold mb-4">About Me</h1>
+      <p class="text-lg leading-relaxed">
+        Motivated and curious Computer Science student with a passion for Full-Stack Development,
+        Artificial Intelligence, and solving real-world problems through technology. Adept in
+        team collaboration and building functional, user-centric applications.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-20 px-4 bg-gray-800" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-700 p-6 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-2xl font-semibold mb-2">InsureAI</h3>
+          <p>
+            A React.js dashboard for insurance policy management with Aadhaar-based login,
+            PostgreSQL backend, and Dialogflow chatbot integration.
+          </p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-2xl font-semibold mb-2">HospitalCare Manager</h3>
+          <p>
+            A Java-based system for healthcare booking with role-based access for patients and
+            staff, using JDBC-MySQL integration.
+          </p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="text-2xl font-semibold mb-2">Disaster Prediction AI</h3>
+          <p>
+            A Python machine learning app for forecasting natural disasters, sending SMS alerts
+            via Twilio.
+          </p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="400">
+          <h3 class="text-2xl font-semibold mb-2">Mental Health Chatbot</h3>
+          <p>
+            A React & TypeScript chatbot offering empathetic support, with local storage and
+            exportable history features.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-20 px-4" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Languages</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>TypeScript</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Frontend</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>React</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Backend</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Node.js</li>
+            <li>Django</li>
+            <li>Spring Boot</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Databases & Tools</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>Git</li>
+            <li>GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 px-4 bg-gray-800" data-aos="fade-up">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+      <div class="flex justify-center space-x-8">
+        <!-- Email -->
+        <a href="mailto:shouryahagaldivte@gmail.com" class="hover:text-indigo-400" aria-label="Email">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/>
+          </svg>
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/Shourya-Hagaldivte" target="_blank" class="hover:text-indigo-400" aria-label="GitHub">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M12 2C6.477 2 2 6.484 2 12.016c0 4.425 2.865 8.183 6.839 9.504.5.093.682-.217.682-.483
+                 0-.237-.009-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.157-1.109-1.465-1.109-1.465
+                 -.908-.62.069-.607.069-.607 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.833
+                 .091-.647.35-1.089.636-1.34-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683
+                 -.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026a9.563 9.563 0 012.5-.336c.85.004
+                 1.705.114 2.5.336 1.907-1.296 2.746-1.026 2.746-1.026.546 1.378.203 2.397.1 2.65
+                 .64.699 1.028 1.592 1.028 2.683 0 3.843-2.338 4.687-4.566 4.935.359.309.679.92.679 1.852
+                 0 1.336-.012 2.415-.012 2.744 0 .268.18.58.688.482A10.02 10.02 0 0022 12.016C22 6.484
+                 17.523 2 12 2z"/>
+          </svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/shourya-hagaldivte-31a4a6330/" target="_blank"
+           class="hover:text-indigo-400" aria-label="LinkedIn">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5
+                     5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11.75
+                     19h-3.5v-9h3.5v9zm-1.75-10.29c-1.121 0-2.03-.909-2.03-2.03s.909-2.03
+                     2.03-2.03 2.03.909 2.03 2.03-.909 2.03-2.03
+                     2.03zm13.75 10.29h-3.5v-4.5c0-1.071-.03-2.449-1.49-2.449-1.49
+                     0-1.719 1.161-1.719 2.37v4.579h-3.5v-9h3.364v1.231h.048c.469-.888
+                     1.614-1.824 3.322-1.824 3.554 0 4.212 2.342 4.212
+                     5.384v5.209z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 text-center text-sm bg-gray-900">
+    <p>© 2025 Shourya Hagaldivte. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS & custom JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
