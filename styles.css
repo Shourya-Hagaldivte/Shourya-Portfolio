@@ -1,0 +1,41 @@
+/* styles.css */
+
+/* Base & background */
+body {
+  /* use the original site’s hero image */
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://korivirishit.tech/assets/images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  cursor: none; /* hide default cursor */
+}
+
+/* Custom pointer arrow */
+#pointer {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMicgaGVpZ2h0PSczMic+PHBvbHlnb24gcG9pbnRzPScwLDAgMjAsMTAgMCwyMCcgZmlsbD0nd2hpdGUnLz48L3N2Zz4=') no-repeat center center;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+/* Heading accents */
+h1, h2, h3 {
+  color: #8b5cf6; /* Tailwind indigo-400 */
+}
+
+/* Navbar link transition */
+nav a {
+  transition: color 0.3s;
+}
+
+/* Project cards */
+.card {
+  background: rgba(31, 41, 55, 0.8); /* Tailwind gray-800 at 80% */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
